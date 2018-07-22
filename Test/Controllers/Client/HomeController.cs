@@ -13,5 +13,10 @@ namespace Test.Controllers.Client
         {
             return View("Index");
         }
+
+        public ActionResult About()
+        {
+            return View("About");
+        }
     }
 }
