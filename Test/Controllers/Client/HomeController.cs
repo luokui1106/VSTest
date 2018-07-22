@@ -4,17 +4,12 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace Test.Controllers
+namespace Test.Controllers.Client
 {
-    public class TestController : Controller
+    public class HomeController : Controller
     {
-        // GET: Test
+        // GET: Home
         public ActionResult Index()
-        {
-            return View();
-        }
-
-        public ActionResult About()
         {
             return View();
         }

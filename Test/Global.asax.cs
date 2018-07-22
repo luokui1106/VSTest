@@ -13,6 +13,15 @@ namespace Test
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+
+            RegisterView();//注册视图访问规则
+        }
+
+
+        protected void RegisterView()
+        {
+            ViewEngines.Engines.Clear();//移除默认视图配置
+            ViewEngines.Engines.Add(new Models.MyViewEngine());//注册自己编写的视图格式
         }
     }
 }
